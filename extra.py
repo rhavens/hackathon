@@ -1,3 +1,4 @@
+import os
 class color:
    PURPLE = '\033[95m'
    CYAN = '\033[96m'
@@ -57,17 +58,18 @@ courseListCOMP.append(Course("COMP 193",193,"Algorithmic Lower Bounds",0,150))
 
 
 def shittyScoreRater(score):
+	print "TCOC rating: "
 	if score < 5:
-		print "Your Schedule is so Easy it would get laid at a Hackathon"
+		print color.RED,"Your Schedule is so Easy it would get laid at a Hackathon",color.END
 		return
 	if score < 10:
-		print "Congrats, your score could not be mediocre. Don't worry, you're still special, just like your mom said you were"
+		print color.BLUE,"Congrats, your score could not be mediocre. Don't worry, you're still special, just like your mom said you were",color.END
 		return
 	if score < 15:
-		print "Your schedule is decent...if you're a wimp"
+		print color.GREEN,"Your schedule is decent...if you're a wimp",color.END
 		return
 	if score < 20: 
-		print "WHY YOU HAVE TO DO THIS TO YO SELF? WHY!?"
+		print color.RED,color.BOLD,"WHY YOU HAVE TO DO THIS TO YO SELF? WHY!?",color.END
 		return
 
 def printClassShit(temp):
@@ -79,7 +81,6 @@ def printClassShit(temp):
 def printClass(temp):
 		print "__________________________________"
 		print "Name:",temp.ID,temp.title
-		print "Time (minutes):", temp.length
 		print "Difficulty:",formula(temp)
 		print "__________________________________"
 
@@ -109,7 +110,8 @@ def formulaScore(tempArray):
 	return sum
 
 def removeClass():
-	print "here are your classes:"
+	os.system('clear')
+	print color.BOLD,color.RED,"Here are your classes:",color.END
 	printUserClasses(userList)
 	print
 	removed = input("Which class would you like to remove? ")-1
@@ -120,9 +122,9 @@ def removeClass():
 
 
 def classAdder():
-	print "Would you like a Fine Arts Class or a Computer Science Class?"
-	print "[1] = Fine Arts"
-	print "[2] = Computer Science"
+	print color.BOLD,color.BLUE,"Would you like a Fine Arts Class or a Computer Science Class?",color.END
+	print color.RED,"[1] = Fine Arts"
+	print " [2] = Computer Science",color.END
 	choice = input("Choice:")
 	if choice == 1:
 		print "You chose Fine Arts...Why?"
@@ -137,7 +139,7 @@ def classAdder():
 	print 
 	print "Pick a class!"
 	temp = 0
-	temp = input()
+	temp = input("")
 	print
 	print "You Picked:"
 	if choice == 2:
