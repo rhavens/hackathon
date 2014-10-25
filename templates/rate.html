@@ -37,37 +37,27 @@
     <br/>
     <div class="jumbotron">
       <div class="container">
-        <span style="text-align: center;"><h1>We want your opinions!</h1></span>
+        <span style="text-align: center;"><h1>We want (some of) your opinions!</h1></span>
       </div>
     </div>
     <div class="row" style="text-align: center">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-6">
+      <div class="col-lg-3"><img alt="Logo" width=100% style="display: inline; padding=0; margin=0;" src={{ url_for('static', filename='img/logo.jpg') }}></img></div>
+      <div class="col-lg-8">
         <div class="well well-lg bg-white">
-        <form method="POST" action="/rate.html">
+        <form method="POST" action="/rate.html" style="text-align: center;">
+          <h2>{{ msg }}</h2>
+          <br/>
           {{ form.hidden_tag() }}
           {{ form.course_id }}
+          <br/>
           {{ form.difficulty }}
+          <br/>
           <input type="submit" value="Submit"><a href="submit"></a></input>
-          <p>{{ msg }}</p>
         </form>
       </div>
         <div class="well well-lg bg-white">
-        <p>How many times have you heard this? Everyone wants some validation and/or sympathy for their masochistic schedules. Of course, every student brags about how much work they have to do and whatnot, but there isn't really any way to simply and concretely quantify just how hard one's schedule is -- until now.</p>
+        <p>Simply find your course, select a difficulty rating, and hit submit. Your scores are weighed against those of the student body to produce an overall ranking.</p>
       </div>
-      </div>
-    </div>
-  </div>
-  <div class="bgheader" style="background-image: url({{ url_for('static', filename='img/aboutbg2.jpg') }});"></div>
-  <div class="container">
-    <div class="row" style="text-align: center">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-8">
-        <h2><span style="font-style: italic;">Enter Tufts Course Online Comparator</span></h2>
-        <p>We at TCOC believe that everyone has the right to brag about their schedule, no matter whether or not it is legitimately hard. We encourage you to rate your own schedule so that you can find your TCOC difficulty and share it with your friends.</p>
-        <br/>
-        <span style="font-style: italic;"><p>Yours truly,</p></span>
-        <p>Justin Lee, Ryan Havens, and David Bernstein</p>
       </div>
     </div>
   </div>

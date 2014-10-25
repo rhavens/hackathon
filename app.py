@@ -67,7 +67,7 @@ def rate():
 		update_course(request.form['course_id'], int(request.form['difficulty']))
 		msg = "Thank you for your submission!"
 	else:
-		msg = "Enter your submission!"
+		msg = "Enter your submission:"
 	return render_template('rate.html', form=form, Course=Course, msg=msg)
 
 @app.route('/test', methods=["POST"])

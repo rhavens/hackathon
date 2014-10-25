@@ -44,20 +44,22 @@
     </div>
     <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul><h3>Currently supported:</h3>
           <li>Computer Science</li>
           <li>Art History</li>
+          <li>Mathematics</li>
         </ul>
+        <img alt="Logo" width=100% style="display: inline; padding=0; margin=0;" src={{ url_for('static', filename='img/logo.jpg') }}></img>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-9">
       <table class="table" id="tb">
         <thead>
           <tr>
             <th>#</th>
             <th>ID</th>
             <th>Course Title</th>
-            <th>Difficuly</th>
+            <th>Difficulty</th>
           </tr>
           {% for course in Course.Query.all().order_by("-difficulty") %}
           <tr>
@@ -72,7 +74,6 @@
       </div>
     </div>
   </div>
-    <iframe id="frmFile" src="../allCourses.json" onload="LoadFile();" style="display: none;"></iframe>
 </body>
 </html>
 {% endautoescape %}
