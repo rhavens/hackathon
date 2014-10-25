@@ -20,6 +20,7 @@
     		});    		
     		for (var i = 0; i < courses.length; i++) {
     			$('#tb').append('<tbody><tr><td>'+(i+1)+'</td><td>'+courses[i][0].ID+'</td><td>'+courses[i][0].title+'</td><td>'+courses[i][1]+'</td>');
+    			if (i >= 24) break;
     		}
 			/*while (strRawContents.indexOf("\r") >= 0)
         		strRawContents = strRawContents.replace("\r", "");
