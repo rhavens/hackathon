@@ -1,6 +1,6 @@
 {"courses":[
 	[{
-		"id": "FAH 2",
+		"ID": "FAH 2",
 		"level": 2,
 		"title": "Art History From 1700 to the Present",
 		"hasLab": 0,
@@ -8,7 +8,7 @@
 	},
 	2.95, 5],
 	[{
-		"id": "FAH 15",
+		"ID": "FAH 15",
 		"level": 15,
 		"title": "Japanese Architecture",
 		"hasLab": 0,
@@ -16,7 +16,7 @@
 	},
 	2.15,5],
 	[{
-		"id": "FAH 19",
+		"ID": "FAH 19",
 		"level": 19,
 		"title": "Classic Archaeology",
 		"hasLab": 0,
@@ -24,7 +24,7 @@
 	},
 	2.19,5],
 	[{
-		"id": "FAH 21",
+		"ID": "FAH 21",
 		"level": 21,
 		"title": "Early Islamic Art",
 		"hasLab": 0,
@@ -32,7 +32,7 @@
 	},
 	2.21,5],
 	[{
-		"id": "FAH 41",
+		"ID": "FAH 41",
 		"level": 41,
 		"title": "The Age of Rembrandt and Bernini",
 		"hasLab": 0,
@@ -40,7 +40,7 @@
 	},
 	2.41,5],
 	[{
-		"id": "FAH 92",
+		"ID": "FAH 92",
 		"level": 92,
 		"title": "Vikings!",
 		"hasLab": 0,
@@ -48,7 +48,7 @@
 	},
 	2.92,5],
 	[{
-		"id": "FAH 98",
+		"ID": "FAH 98",
 		"level": 98,
 		"title": "Senior Integrative Project Seminar",
 		"hasLab": 0,
@@ -56,7 +56,7 @@
 	},
 	2.98,5],
 	[{
-		"id": "FAH 104",
+		"ID": "FAH 104",
 		"level": 41,
 		"title": "Greek Art and Archaeology",
 		"hasLab": 0,
@@ -64,7 +64,7 @@
 	},
 	3.04,5],
 	[{
-		"id": "FAH 120",
+		"ID": "FAH 120",
 		"level": 120,
 		"title": "Armenian Art, Architecture and Politics 4th to 14th Centuries",
 		"hasLab": 0,
@@ -72,7 +72,7 @@
 	},
 	3.20,5],
 	[{
-		"id": "FAH 122",
+		"ID": "FAH 122",
 		"level": 122,
 		"title": "Iconoclosm and Iconophobia",
 		"hasLab": 0,
@@ -80,7 +80,7 @@
 	},
 	3.22,5],
 	[{
-		"id": "FAH 193",
+		"ID": "FAH 193",
 		"level": 193,
 		"title": "Histories of Modern Architecture",
 		"hasLab": 0,
@@ -88,7 +88,7 @@
 	},
 	3.98,5],
 	[{
-		"id": "FAH 200",
+		"ID": "FAH 200",
 		"level": 200,
 		"title": "Seminar: Japanese Narrative Pictues: Heroes, Heriones, Ghosts and Deamons",
 		"hasLab": 0,
@@ -96,7 +96,7 @@
 	},
 	4.00,5],
 	[{
-		"id": "FAH 280",
+		"ID": "FAH 280",
 		"level": 280,
 		"title": "Seminar: Photography in Mexico",
 		"hasLab": 0,
@@ -104,7 +104,7 @@
 	},
 	4.80,5],
 	[{
-		"id": "FAH 288",
+		"ID": "FAH 288",
 		"level": 288,
 		"title": "Collections Care and Preservation",
 		"hasLab": 0,
