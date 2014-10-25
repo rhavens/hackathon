@@ -4,7 +4,7 @@
 		"level": "11",
 		"title": "Introduction to Computer Science",
 		"hasLab": 1,
-		"length": 150,
+		"length": 150
 	},
 	2.61,5],
 	[{
@@ -12,7 +12,7 @@
 		"level": "15",
 		"title": "Data Structures",
 		"hasLab": 1,
-		"length": 150,
+		"length": 150
 
 	},
 	2.65,5],
@@ -21,7 +21,7 @@
 		"level": "20",
 		"title": "Web Programming",
 		"hasLab": 1,
-		"length": 150,
+		"length": 150
 	},
 	2.70,5],
 	[{
@@ -29,7 +29,7 @@
 		"level": "40",
 		"title": "Machine Structure & Assembly-Language Programming",
 		"hasLab": 1,
-		"length": 150,
+		"length": 150
 	},
 	2.90,5],
 	[{
@@ -37,7 +37,7 @@
 		"level": "61",
 		"title": "Discrete Mathematics",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	2.61,5],
 	[{
@@ -45,7 +45,7 @@
 		"level": "97",
 		"title": "Senior Capstone Project I",
 		"hasLab": 1,
-		"length": 150,
+		"length": 150
 	},
 	3,47,5],
 	[{
@@ -53,7 +53,7 @@
 		"level": "105",
 		"title": "Programming Languages",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.05,5],
 	[{
@@ -61,7 +61,7 @@
 		"level": "111",
 		"title": "Operating Systems",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.11,5],
 	[{
@@ -69,7 +69,7 @@
 		"level": "116",
 		"title": "Introduction to Computer Security",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.16,5],
 	[{
@@ -77,7 +77,7 @@
 		"level": "135",
 		"title": "Introduction to Machine Learning",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.35,5],
 	[{
@@ -85,7 +85,7 @@
 		"level": "160",
 		"title": "Algorithms",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.6,5],
 	[{
@@ -93,7 +93,7 @@
 		"level": "163",
 		"title": "Computational Geometry",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3,63,5],
 	[{
@@ -101,7 +101,7 @@
 		"level": "193",
 		"title": "Algorithmic Lower Bounds: Fun with Hardness Proofs",
 		"hasLab": 0,
-		"length": 150,
+		"length": 150
 	},
 	3.93,5],
 	[{
@@ -216,5 +216,5 @@
 		"length": 150
 	},
 	4.88,5]
-	
+
 ]}
