@@ -1,6 +1,12 @@
 # imports
 from flask import Flask, request, session, g, redirect, url_for, \
 	abort, render_template, flash
+from flask_wtf import Form
+from wtforms import StringField, IntegerField, SelectField
+from wtforms.validators import DataRequired
+
+WTF_CSRF_ENABLED = False
+
 import json
 from parse_rest.connection import register
 from parse_rest.datatypes import Object
@@ -17,6 +23,25 @@ class Course(Object):
 
 app = Flask(__name__, static_url_path='/home/ryan/Documents/PROJECTS/hackathon2/hackathon/static/')
 app.config.from_object(__name__)
+app.secret_key = 'chiave'
+
+course_ids = []
+difficulties = [(1,"Very easy"),(2,"Easy"),(3,"Medium"),(4,"Hard"),(5,"Very hard")]
+for course in Course.Query.all().order_by("-course_id"):
+	course_ids.append((course.course_id, course.course_id+" "+course.title))
+
+def update_course(id, diff):
+	courseS = Course.Query.get(course_id = id)
+	courseS.difficulty = float("{0:.2f}".format((courseS.difficulty * courseS.num_reviews + diff) / (courseS.num_reviews + 1)))
+	courseS.num_reviews = courseS.num_reviews + 1
+	courseS.save()
+
+class MyForm(Form):
+	def __init__(self, *args, **kwargs):
+		kwargs['csrf_enabled'] = False
+		super(MyForm, self).__init__(*args, **kwargs)
+	course_id = SelectField('course_id', choices=course_ids)
+	difficulty = SelectField('difficulty', choices=difficulties)
 
 @app.route('/')
 @app.route('/index.html')
@@ -31,9 +56,19 @@ def contact():
 def about():
 	return render_template('about.html')
 
-@app.route('/rate.html')
+msg = ""
+@app.route('/rate.html', methods=['GET','POST'])
 def rate():
-	return render_template('rate.html')
+	msg = ""
+	form = MyForm(csrf_enabled=False)
+	print(form)
+	if request.method == "POST":
+		print(request.form['difficulty'])
+		update_course(request.form['course_id'], int(request.form['difficulty']))
+		msg = "Thank you for your submission!"
+	else:
+		msg = "Enter your submission!"
+	return render_template('rate.html', form=form, Course=Course, msg=msg)
 
 @app.route('/test', methods=["POST"])
 def test():
