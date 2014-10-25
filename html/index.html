@@ -9,14 +9,18 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/custom.css" type="text/css">
 	<script>
-		var data;
-
 		function LoadFile() {
     		var oFrame = document.getElementById("frmFile");
     		var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
-    		console.log(strRawContents);
     		var data = JSON.parse(strRawContents);
     		console.log(data);
+    		var courses = data.courses;
+    		courses.sort(function(a, b) {
+    			return b[1] - a[1];
+    		});    		
+    		for (var i = 0; i < courses.length; i++) {
+    			$('#tb').append('<tbody><tr><td>'+(i+1)+'</td><td>'+courses[i][0].id+'</td><td>'+courses[i][0].title+'</td><td>'+courses[i][1]+'</td>');
+    		}
 			/*while (strRawContents.indexOf("\r") >= 0)
         		strRawContents = strRawContents.replace("\r", "");
     		var arrLines = strRawContents.split("\n");
