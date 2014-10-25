@@ -64,7 +64,15 @@
         <p><a class="btn btn-primary btn-lg" role="button" href="#tb">Learn more &raquo;</a></p>
       </div>
     </div>
-    <div class="container">
+    <div class="row">
+    	<div class="col-md-4">
+    		<h3>Currently supported:</h3>
+    		<ul>
+    			<li>Computer Science</li>
+    			<li>Art History</li>
+    		</ul>
+    	</div>
+    	<div class="col-md-8">
     	<table class="table" id="tb">
     		<thead>
     			<tr>
@@ -74,15 +82,8 @@
     				<th>Difficuly</th>
     			</tr>
     		</thead>
-    		<tbody>
-    			<tr class="success">
-    				<td>1</td>
-    				<td>COMP 40</td>
-    				<td>Machine Structure and Assembly Programming</td>
-    				<td>5.0</td>
-    			</tr>
-    		</tbody>
     	</table>
+    	</div>
     </div>
     <iframe id="frmFile" src="../ahcourses.json" onload="LoadFile();" style="display: none;"></iframe>
 </body>
