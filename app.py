@@ -2,8 +2,9 @@
 from flask import Flask, request, session, g, redirect, url_for, \
 	abort, render_template, flash
 from flask_wtf import Form
-from wtforms import StringField, IntegerField, SelectField
+from wtforms import StringField, IntegerField, SelectField, TextAreaField
 from wtforms.validators import DataRequired
+from indicoio import sentiment
 
 WTF_CSRF_ENABLED = False
 
@@ -42,6 +43,7 @@ class MyForm(Form):
 		super(MyForm, self).__init__(*args, **kwargs)
 	course_id = SelectField('course_id', choices=course_ids)
 	difficulty = SelectField('difficulty', choices=difficulties)
+	text = TextAreaField('text')
 
 @app.route('/')
 @app.route('/index.html')
@@ -63,7 +65,11 @@ def rate():
 	form = MyForm(csrf_enabled=False)
 	print(form)
 	if request.method == "POST":
-		print(request.form['difficulty'])
+		if len(request.form['text']) > 20:
+			if sentiment(request.form['text']) == "positive":
+				update_course(request.form['course_id'], int(request.form['difficulty']) - (0 + int(request.form['difficulty'])) / 5.0)
+			else:
+				update_course(request.form['course_id'], int(request.form['difficulty']) + (5 - int(request.form['difficulty'])) / 5.0)
 		update_course(request.form['course_id'], int(request.form['difficulty']))
 		msg = "Thank you for your submission!"
 	else:
