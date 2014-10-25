@@ -1,0 +1,107 @@
+{"courses":[
+	{
+		"id": "FAH 2",
+		"level": 2,
+		"title": "Art History From 1700 to the Present",
+		"hasLab": false,
+		"length": 220
+	},
+	{
+		"id": "FAH 15",
+		"level": 15,
+		"title": "Japanese Architecture",
+		"hasLab": false,
+		"length": 75
+	},
+	{
+		"id": "FAH 19",
+		"level": 19,
+		"title": "Classic Archaeology",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 21",
+		"level": 21,
+		"title": "Early Islamic Art",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 41",
+		"level": 41,
+		"title": "The Age of Rembrandt and Bernini",
+		"hasLab": false,
+		"length": 150
+	},
+		{
+		"id": "FAH 92",
+		"level": 92,
+		"title": "Vikings!",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 98",
+		"level": 98,
+		"title": "Senior Integrative Project Seminar",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 104",
+		"level": 41,
+		"title": "Greek Art and Archaeology",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 120",
+		"level": 120,
+		"title": "Armenian Art, Architecture and Politics 4th to 14th Centuries",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 122",
+		"level": 122,
+		"title": "Iconoclosm and Iconophobia",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 193",
+		"level": 193,
+		"title": "Histories of Modern Architecture",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 200",
+		"level": 200,
+		"title": "Seminar: Japanese Narrative Pictues: Heroes, Heriones, Ghosts and Deamons",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 250",
+		"level": 250,
+		"title": "Seminar: Rationality and its Discontents",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 280",
+		"level": 280,
+		"title": "Seminar: Photography in Mexico",
+		"hasLab": false,
+		"length": 150
+	},
+	{
+		"id": "FAH 288",
+		"level": 288,
+		"title": "Collections Care and Preservation",
+		"hasLab": false,
+		"length": 150
+	},
+]}
