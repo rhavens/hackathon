@@ -82,6 +82,14 @@
             <th>Course Title</th>
             <th>Difficuly</th>
           </tr>
+          {% for course in Course.Query.all().order_by("difficulty") }
+          <tr>
+            <th>{{ forloop.counter }}</th>
+            <th>{{ course.course_id }}</th>
+            <th>{{ course.title }}</th>
+            <th>{{ course.difficulty }}</th>
+          </tr>
+          {% endfor %}
         </thead>
       </table>
       </div>
