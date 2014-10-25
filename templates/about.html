@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Tufts Course Online Comparator</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" type="text/css">
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand active" href="#">Tufts Course Online Comparator</a>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rate.html">Add your opinion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="bgheader" style="background-image: url({{ url_for('static', filename='img/aboutbg.jpg') }});"></div>
+  <div class="container">
+    <br/>
+    <div class="jumbotron">
+      <div class="container">
+        <h2><span style="font-style: italic">"Have you seen my schedule? It's so hard!</span></h2>
+        <p>-- A random Tufts student near you</p>
+      </div>
+    </div>
+    <div class="row" style="text-align: center">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div class="well well-lg bg-white">
+        <p>How many times have you heard this? Everyone wants some validation and/or sympathy for their masochistic schedules. Of course, every student brags about how much work they have to do and whatnot, but there isn't really any way to simply and concretely quantify just how hard one's schedule is -- until now.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bgheader" style="background-image: url({{ url_for('static', filename='img/aboutbg2.jpg') }});"></div>
+  <div class="container">
+    <div class="row" style="text-align: center">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <h2><span style="font-style: italic;">Enter Tufts Course Online Comparator</span></h2>
+        <p>We at TCOC believe that everyone has the right to brag about their schedule, no matter whether or not it is legitimately hard. We encourage you to rate your own schedule so that you can find your TCOC difficulty and share it with your friends.</p>
+        <br/>
+        <span style="font-style: italic;"><p>Yours truly,</p></span>
+        <p>Justin Lee, Ryan Havens, and David Bernstein</p>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</body>
+</html>
+

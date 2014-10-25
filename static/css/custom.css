@@ -10,3 +10,11 @@ li {
 .col-lg-4 {
 	text-align: center;
 }
+
+.col-lg-6 {
+	font-size: 120%;
+}
+
+.bg-white {
+	background-color: #FCFCFC;
+}

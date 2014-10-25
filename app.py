@@ -27,6 +27,13 @@ def root():
 def contact():
 	return render_template('contact.html')
 
+@app.route('/about.html')
+def about():
+	return render_template('about.html')
+
+@app.route('/rate.html')
+def rate():
+	return render_template('rate.html')
 
 @app.route('/test', methods=["POST"])
 def test():
