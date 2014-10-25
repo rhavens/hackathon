@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{% autoescape true %}
 <html>
 <head>
   <title>Tufts Course Online Comparator</title>
@@ -8,30 +8,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" type="text/css">
-  <script>
-    function LoadFile() {
-        var oFrame = document.getElementById("frmFile");
-        var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
-        var data = JSON.parse(strRawContents);
-        console.log(data);
-        var courses = data.courses;
-        courses.sort(function(a, b) {
-          return b[1] - a[1];
-        });       
-        for (var i = 0; i < courses.length; i++) {
-          $('#tb').append('<tbody><tr><td>'+(i+1)+'</td><td>'+courses[i][0].ID+'</td><td>'+courses[i][0].title+'</td><td>'+courses[i][1]+'</td>');
-          if (i >= 24) break;
-        }
-      /*while (strRawContents.indexOf("\r") >= 0)
-            strRawContents = strRawContents.replace("\r", "");
-        var arrLines = strRawContents.split("\n");
-        alert("File " + oFrame.src + " has " + arrLines.length + " lines");
-        for (var i = 0; i < arrLines.length; i++) {
-            var curLine = arrLines[i];
-            alert("Line #" + (i + 1) + " is: '" + curLine + "'");
-        }*/
-    }
-  </script>
 </head>
 
 <body>
@@ -82,9 +58,9 @@
             <th>Course Title</th>
             <th>Difficuly</th>
           </tr>
-          {% for course in Course.Query.all().order_by("difficulty") }
+          {% for course in Course.Query.all().order_by("-difficulty") %}
           <tr>
-            <th>{{ forloop.counter }}</th>
+            <th>{{ loop.index }}</th>
             <th>{{ course.course_id }}</th>
             <th>{{ course.title }}</th>
             <th>{{ course.difficulty }}</th>
@@ -98,4 +74,4 @@
     <iframe id="frmFile" src="../allCourses.json" onload="LoadFile();" style="display: none;"></iframe>
 </body>
 </html>
-
+{% endautoescape %}

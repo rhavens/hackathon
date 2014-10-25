@@ -21,7 +21,7 @@ app.config.from_object(__name__)
 @app.route('/')
 @app.route('/index.html')
 def root():
-	return render_template('index.html')
+	return render_template('index.html', Course=Course)
 
 @app.route('/contact.html')
 def contact():
@@ -33,4 +33,5 @@ def test():
 	return "Nice...\n"
 
 if __name__ == "__main__":
+	app.debug = True
 	app.run()
