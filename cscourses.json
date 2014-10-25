@@ -1,12 +1,101 @@
 {"courses":[
 	{
 		"id": "COMP 11",
+		"level": "11",
 		"title": "Introduction to Computer Science",
-		"hasLab": true
+		"hasLab": true,
+		"length": 150,
 	},
 	{
 		"id": "COMP 15",
+		"level": "15",
 		"title": "Data Structures",
-		"hasLab": true
-	}
+		"hasLab": true,
+		"length": 150,
+
+	},
+	{
+		"id": "COMP 20",
+		"level": "20",
+		"title": "Web Programming",
+		"hasLab": true,
+		"length": 150,
+	},
+	{
+		"id": "COMP 40",
+		"level": "40",
+		"title": "Machine Structure & Assembly-Language Programming",
+		"hasLab": true,
+		"length": 150,
+	},
+	{
+		"id": "COMP 61",
+		"level": "61",
+		"title": "Discrete Mathematics",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 97",
+		"level": "97",
+		"title": "Senior Capstone Project I",
+		"hasLab": true,
+		"length": 150,
+	},
+	{
+		"id": "COMP 105",
+		"level": "105",
+		"title": "Programming Languages",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 111",
+		"level": "111",
+		"title": "Operating Systems",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 116",
+		"level": "116",
+		"title": "Introduction to Computer Security",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 135",
+		"level": "135",
+		"title": "Introduction to Machine Learning",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 136",
+		"level": "136",
+		"title": "Statistical Pattern Recognition",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 160",
+		"level": "160",
+		"title": "Algorithms",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 163",
+		"level": "163",
+		"title": "Computational Geometry",
+		"hasLab": false,
+		"length": 150,
+	},
+	{
+		"id": "COMP 193",
+		"level": "193",
+		"title": "Algorithmic Lower Bounds: Fun with Hardness Proofs",
+		"hasLab": false,
+		"length": 150,
+	},
 ]}
