@@ -1,0 +1,220 @@
+{"courses":[
+	[{
+		"ID": "COMP 11",
+		"level": "11",
+		"title": "Introduction to Computer Science",
+		"hasLab": 1,
+		"length": 150,
+	},
+	2.61,5],
+	[{
+		"ID": "COMP 15",
+		"level": "15",
+		"title": "Data Structures",
+		"hasLab": 1,
+		"length": 150,
+
+	},
+	2.65,5],
+	[{
+		"ID": "COMP 20",
+		"level": "20",
+		"title": "Web Programming",
+		"hasLab": 1,
+		"length": 150,
+	},
+	2.70,5],
+	[{
+		"ID": "COMP 40",
+		"level": "40",
+		"title": "Machine Structure & Assembly-Language Programming",
+		"hasLab": 1,
+		"length": 150,
+	},
+	2.90,5],
+	[{
+		"ID": "COMP 61",
+		"level": "61",
+		"title": "Discrete Mathematics",
+		"hasLab": 0,
+		"length": 150,
+	},
+	2.61,5],
+	[{
+		"ID": "COMP 97",
+		"level": "97",
+		"title": "Senior Capstone Project I",
+		"hasLab": 1,
+		"length": 150,
+	},
+	3,47,5],
+	[{
+		"ID": "COMP 105",
+		"level": "105",
+		"title": "Programming Languages",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.05,5],
+	[{
+		"ID": "COMP 111",
+		"level": "111",
+		"title": "Operating Systems",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.11,5],
+	[{
+		"ID": "COMP 116",
+		"level": "116",
+		"title": "Introduction to Computer Security",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.16,5],
+	[{
+		"ID": "COMP 135",
+		"level": "135",
+		"title": "Introduction to Machine Learning",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.35,5],
+	[{
+		"ID": "COMP 160",
+		"level": "160",
+		"title": "Algorithms",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.6,5],
+	[{
+		"ID": "COMP 163",
+		"level": "163",
+		"title": "Computational Geometry",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3,63,5],
+	[{
+		"ID": "COMP 193",
+		"level": "193",
+		"title": "Algorithmic Lower Bounds: Fun with Hardness Proofs",
+		"hasLab": 0,
+		"length": 150,
+	},
+	3.93,5],
+	[{
+		"ID": "FAH 2",
+		"level": 2,
+		"title": "Art History From 1700 to the Present",
+		"hasLab": 0,
+		"length": 220
+	},
+	2.95, 5],
+	[{
+		"ID": "FAH 15",
+		"level": 15,
+		"title": "Japanese Architecture",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.15,5],
+	[{
+		"ID": "FAH 19",
+		"level": 19,
+		"title": "Classic Archaeology",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.19,5],
+	[{
+		"ID": "FAH 21",
+		"level": 21,
+		"title": "Early Islamic Art",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.21,5],
+	[{
+		"ID": "FAH 41",
+		"level": 41,
+		"title": "The Age of Rembrandt and Bernini",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.41,5],
+	[{
+		"ID": "FAH 92",
+		"level": 92,
+		"title": "Vikings!",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.92,5],
+	[{
+		"ID": "FAH 98",
+		"level": 98,
+		"title": "Senior Integrative Project Seminar",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.98,5],
+	[{
+		"ID": "FAH 104",
+		"level": 41,
+		"title": "Greek Art and Archaeology",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.04,5],
+	[{
+		"ID": "FAH 120",
+		"level": 120,
+		"title": "Armenian Art, Architecture and Politics 4th to 14th Centuries",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.20,5],
+	[{
+		"ID": "FAH 122",
+		"level": 122,
+		"title": "Iconoclosm and Iconophobia",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.22,5],
+	[{
+		"ID": "FAH 193",
+		"level": 193,
+		"title": "Histories of Modern Architecture",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.98,5],
+	[{
+		"ID": "FAH 200",
+		"level": 200,
+		"title": "Seminar: Japanese Narrative Pictues: Heroes, Heriones, Ghosts and Deamons",
+		"hasLab": 0,
+		"length": 150
+	},
+	4.00,5],
+	[{
+		"ID": "FAH 280",
+		"level": 280,
+		"title": "Seminar: Photography in Mexico",
+		"hasLab": 0,
+		"length": 150
+	},
+	4.80,5],
+	[{
+		"ID": "FAH 288",
+		"level": 288,
+		"title": "Collections Care and Preservation",
+		"hasLab": 0,
+		"length": 150
+	},
+	4.88,5]
+	
+]}
