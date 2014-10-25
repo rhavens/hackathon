@@ -10,5 +10,5 @@ Ryan "Meg" Havens
 
 David "Xeno" Bernstein
 
-	Nerd legend tells the story of a man who wrote the Python language while coming out of his mother's womb; this is not his story. David, born in Atlanta Georgia, is the Capri Sun Pouch that provides the creative juices for the team. When he's not cracking puns that your dad's dad would groan at, David can be found trying to do something that he definitely should not be doing.
+	Nerd legend tells the story of a man who wrote the Python language while coming out of his mother's womb; this is not his story. David, born in Atlanta Georgia, is the Capri Sun Pouch that provides the creative juices for the team. When he's not cracking bad puns that your dad's dad would groan at, David can be found trying to do something that he definitely should not be doing.
 	Quote: "What would happen if I tried this..."
