@@ -1,5 +1,110 @@
 {"courses":[
 	[{
+		"ID": "COMP 11",
+		"level": "11",
+		"title": "Introduction to Computer Science",
+		"hasLab": 1,
+		"length": 150
+	},
+	2.61,5],
+	[{
+		"ID": "COMP 15",
+		"level": "15",
+		"title": "Data Structures",
+		"hasLab": 1,
+		"length": 150
+
+	},
+	2.65,5],
+	[{
+		"ID": "COMP 20",
+		"level": "20",
+		"title": "Web Programming",
+		"hasLab": 1,
+		"length": 150
+	},
+	2.70,5],
+	[{
+		"ID": "COMP 40",
+		"level": "40",
+		"title": "Machine Structure & Assembly-Language Programming",
+		"hasLab": 1,
+		"length": 150
+	},
+	2.90,5],
+	[{
+		"ID": "COMP 61",
+		"level": "61",
+		"title": "Discrete Mathematics",
+		"hasLab": 0,
+		"length": 150
+	},
+	2.61,5],
+	[{
+		"ID": "COMP 97",
+		"level": "97",
+		"title": "Senior Capstone Project I",
+		"hasLab": 1,
+		"length": 150
+	},
+	3,47,5],
+	[{
+		"ID": "COMP 105",
+		"level": "105",
+		"title": "Programming Languages",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.05,5],
+	[{
+		"ID": "COMP 111",
+		"level": "111",
+		"title": "Operating Systems",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.11,5],
+	[{
+		"ID": "COMP 116",
+		"level": "116",
+		"title": "Introduction to Computer Security",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.16,5],
+	[{
+		"ID": "COMP 135",
+		"level": "135",
+		"title": "Introduction to Machine Learning",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.35,5],
+	[{
+		"ID": "COMP 160",
+		"level": "160",
+		"title": "Algorithms",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.6,5],
+	[{
+		"ID": "COMP 163",
+		"level": "163",
+		"title": "Computational Geometry",
+		"hasLab": 0,
+		"length": 150
+	},
+	3,63,5],
+	[{
+		"ID": "COMP 193",
+		"level": "193",
+		"title": "Algorithmic Lower Bounds: Fun with Hardness Proofs",
+		"hasLab": 0,
+		"length": 150
+	},
+	3.93,5],
+	[{
 		"ID": "FAH 2",
 		"level": 2,
 		"title": "Art History From 1700 to the Present",
@@ -111,4 +216,5 @@
 		"length": 150
 	},
 	4.88,5]
+
 ]}
