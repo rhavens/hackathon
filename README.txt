@@ -10,6 +10,8 @@
 
 Our project is currently hosted at http://coursecomparator.herokuapp.com
 
+It also runs in the command line with "python app.py".
+
 We sought to put an end to the frequent debates and infighting amongst Tufts
 students by finally, once and for all, settling the ultimate question:
 
