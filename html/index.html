@@ -9,9 +9,27 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/custom.css" type="text/css">
 	<script>
-		$(document).ready(function() {
-			var iter = 0;
-			data = JSON.parse(
+		function LoadFile() {
+    		var oFrame = document.getElementById("frmFile");
+    		var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+    		var data = JSON.parse(strRawContents);
+    		console.log(data);
+    		var courses = data.courses;
+    		courses.sort(function(a, b) {
+    			return b[1] - a[1];
+    		});    		
+    		for (var i = 0; i < courses.length; i++) {
+    			$('#tb').append('<tbody><tr><td>'+(i+1)+'</td><td>'+courses[i][0].id+'</td><td>'+courses[i][0].title+'</td><td>'+courses[i][1]+'</td>');
+    		}
+			/*while (strRawContents.indexOf("\r") >= 0)
+        		strRawContents = strRawContents.replace("\r", "");
+    		var arrLines = strRawContents.split("\n");
+    		alert("File " + oFrame.src + " has " + arrLines.length + " lines");
+    		for (var i = 0; i < arrLines.length; i++) {
+        		var curLine = arrLines[i];
+        		alert("Line #" + (i + 1) + " is: '" + curLine + "'");
+    		}*/
+		}
 	</script>
 </head>
 
@@ -47,6 +65,14 @@
       </div>
     </div>
     <div class="container">
+    <div class="row">
+    	<div class="col-md-4">
+    		<ul><h3>Currently supported:</h3>
+    			<li>Computer Science</li>
+    			<li>Art History</li>
+    		</ul>
+    	</div>
+    	<div class="col-md-8">
     	<table class="table" id="tb">
     		<thead>
     			<tr>
@@ -56,17 +82,11 @@
     				<th>Difficuly</th>
     			</tr>
     		</thead>
-    		<tbody>
-    			<tr class="success">
-    				<td>1</td>
-    				<td>COMP 40</td>
-    				<td>Machine Structure and Assembly Programming</td>
-    				<td>5.0</td>
-    			</tr>
-    		</tbody>
     	</table>
+    	</div>
     </div>
-    <iframe id="frmFile" src="test.txt" onload="LoadFile();" style="display: none;"></iframe>
+	</div>
+    <iframe id="frmFile" src="../ahcourses.json" onload="LoadFile();" style="display: none;"></iframe>
 </body>
 </html>
 
